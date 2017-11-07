@@ -29,13 +29,13 @@ public class AdapterCompromisos extends RecyclerView.Adapter<AdapterCompromisos.
 
     public class CompromisoHolder extends RecyclerView.ViewHolder {
 
-        public TextView tv_comrpomiso;
+        public TextView tv_compromiso;
         public EditText et_compromiso, et_responsable, et_estado;
 
         public CompromisoHolder(View itemView) {
             super(itemView);
 
-            tv_comrpomiso = (TextView) itemView.findViewById(R.id.tv_compromisos);
+            tv_compromiso = (TextView) itemView.findViewById(R.id.tv_compromisos);
             et_compromiso = (EditText) itemView.findViewById(R.id.et_compromiso);
             et_responsable = (EditText) itemView.findViewById(R.id.et_respons);
             et_estado = (EditText) itemView.findViewById(R.id.et_estado);
@@ -105,7 +105,7 @@ public class AdapterCompromisos extends RecyclerView.Adapter<AdapterCompromisos.
             }
         });
 
-        holder.tv_comrpomiso.setText(String.valueOf(position + 1));
+        holder.tv_compromiso.setText(String.valueOf(position + 1));
         if (id_Identificador == 0){
 
         } else if (id_Identificador == 2){
